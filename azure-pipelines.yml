@@ -24,7 +24,6 @@ steps:
   inputs:
     Contents: '**/*.war'
     ArtifactName: '$(build.artifactstagingdirectory)'
-- 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
